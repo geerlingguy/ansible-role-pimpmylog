@@ -12,7 +12,21 @@ Requires PHP to be installed on the server, and a web server like Apache, Nginx,
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    TODO.
+    pimpmylog_install_dir: /var/www/pimpmylog
+
+The location where Pimp my Log will be installed. You should configure a virtual host or server entry pointing to this directory so you can access the interface. Otherwise, you could choose a location that's within an existing docroot, e.g. the default docroot `/var/www/html/pimpmylog`, and access Pimp my Log at `http://localhost/pimpmylog/`.
+
+    pimpmylog_repo: https://github.com/potsky/PimpMyLog.git
+
+The git repository URL from which Pimp my Log will be cloned.
+
+    pimpmylog_version: master
+
+The version of Pimp my Log to install. Can be any valid tag, branch, or `HEAD`.
+
+    pimpmylog_grant_all_privs: no
+
+The setup of Pimp my Log allows for auto-configuration if the installation directory has `777` privileges, but this is an insecure way to install Pimp my Log. If you're installing on a local development environment, this is relatively harmless to set to `yes` to ease in installation... but if you're running this on a production or publicly-available server, don't even _think_ about changing this value!
 
 ## Dependencies
 

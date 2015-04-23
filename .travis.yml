@@ -34,5 +34,4 @@ script:
     || (echo 'Idempotence test: fail' && exit 1)
 
   # Check if Pimp my Log is reachable.
-  # TODO
-  # - curl http://127.0.0.1/pimpmylog/
+  - curl http://127.0.0.1/pimpmylog/

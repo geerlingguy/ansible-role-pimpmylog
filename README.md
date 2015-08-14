@@ -38,7 +38,7 @@ None.
       roles:
         - { role: geerlingguy.apache }
         - { role: geerlingguy.php }
-        - { role: geerlingguy.phpmyadmin }
+        - { role: geerlingguy.pimpmylog }
 
 ## License
 

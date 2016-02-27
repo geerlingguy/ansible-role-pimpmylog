@@ -3,3 +3,11 @@ pimpmylog_install_dir: /var/www/pimpmylog
 pimpmylog_repo: https://github.com/potsky/PimpMyLog.git
 pimpmylog_version: master
 pimpmylog_grant_all_privs: no
+
+pimpmylog_extra_paths:
+  - software: apache
+    access_files:
+      - other_vhosts_access.log
+      - other_vhosts_access_log
+    error_files: []
+    directories: []

@@ -12,3 +12,13 @@
     state: directory
     mode: 0777
   when: pimpmylog_grant_all_privs
+
+- name: Copy custom paths configs in place.
+  template:
+    src: custom.paths.user.php.j2
+    dest: "{{ pimpmylog_install_dir }}/cfg/{{ item.software }}.paths.user.php"
+    owner: root
+    group: root
+    mode: 0644
+  with_items: pimpmylog_extra_paths
+  when: pimpmylog_extra_paths | length

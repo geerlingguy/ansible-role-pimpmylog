@@ -1,0 +1,20 @@
+<?php
+
+include_once __DIR__ . '/{{ item.software }}.paths.php';
+
+{% if item.directories is defined %}
+{% for path in item.directories %}
+$paths[] = '{{ path }}';
+{% endfor %}
+{% endif %}
+
+{% if item.access_files is defined %}
+{% for file in item.access_files %}
+$files['access'][] = '{{ file }}';
+{% endfor %}
+{% endif %}
+{% if item.error_files is defined %}
+{% for file in item.error_files %}
+$files['error'][] = '{{ file }}';
+{% endfor %}
+{% endif %}

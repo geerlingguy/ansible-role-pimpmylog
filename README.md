@@ -28,6 +28,16 @@ The version of Pimp my Log to install. Can be any valid tag, branch, or `HEAD`.
 
 The setup of Pimp my Log allows for auto-configuration if the installation directory has `777` privileges, but this is an insecure way to install Pimp my Log. If you're installing on a local development environment, this is relatively harmless to set to `yes` to ease in installation... but if you're running this on a production or publicly-available server, don't even _think_ about changing this value!
 
+    pimpmylog_extra_paths:
+      - software: apache
+        access_files:
+          - other_vhosts_access.log
+          - other_vhosts_access_log
+        error_files: []
+        directories: []
+
+Add additional log files to an existing `software` (out of the box PimpMyLog supports `apache`, `nginx`, `iis` and `php`). Specify the filenames of the additional log files in `access_files` or `error_files` (optional), alternatively specify an additional `directory` where PimpMyLog should look for the log files.
+
 ## Dependencies
 
 None.

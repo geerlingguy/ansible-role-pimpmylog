@@ -35,3 +35,6 @@ script:
 
   # Check if Pimp my Log is reachable.
   - curl http://127.0.0.1/pimpmylog/
+
+  # Debug
+  - ls -l /var/www/pimpmylog/cfg/

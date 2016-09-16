@@ -1,11 +1,18 @@
 ---
-- hosts: localhost
-  remote_user: root
+- hosts: all
 
   vars:
     pimpmylog_grant_all_privs: yes
 
+  pre_tasks:
+    - name: Update apt cache.
+      apt: update_cache=yes
+      when: ansible_os_family == 'Debian'
+
+    - name: Ensure test dependencies are present.
+      package: name=curl state=present
+
   roles:
     - geerlingguy.apache
     - geerlingguy.php
-    - ansible-role-pimpmylog
+    - role_under_test

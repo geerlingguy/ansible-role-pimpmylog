@@ -13,6 +13,7 @@
       package: name=curl state=present
 
   roles:
+    - geerlingguy.git
     - geerlingguy.apache
     - geerlingguy.php
     - role_under_test

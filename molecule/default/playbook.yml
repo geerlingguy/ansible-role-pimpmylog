@@ -18,9 +18,9 @@
     - role: geerlingguy.pimpmylog
 
   post_tasks:
-    - name: Ensure phpMyAdmin is running on the specified port.
+    - name: Ensure pimpmylog is running on the specified port.
       uri:
-        url: "http://127.0.0.1/phpmyadmin/"
+        url: "http://127.0.0.1/pimpmylog/"
         status_code: 200
       register: result
       until: result.status == 200

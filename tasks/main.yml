@@ -4,7 +4,7 @@
     dest: "{{ pimpmylog_install_dir }}"
     repo: "{{ pimpmylog_repo }}"
     version: "{{ pimpmylog_version }}"
-    accept_hostkey: yes
+    accept_hostkey: true
 
 - name: Grant all privileges on the Pimp my Log directory.
   file:

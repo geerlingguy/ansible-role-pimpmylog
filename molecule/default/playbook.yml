@@ -5,6 +5,7 @@
 
   vars:
     pimpmylog_grant_all_privs: true
+    pimpmylog_install_dir: /var/www/html/pimpmylog
 
   pre_tasks:
     - name: Update apt cache.

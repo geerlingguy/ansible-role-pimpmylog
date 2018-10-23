@@ -6,6 +6,7 @@
   vars:
     pimpmylog_grant_all_privs: true
     pimpmylog_install_dir: /var/www/html/pimpmylog
+    php_default_version_debian: "7.2"
 
   pre_tasks:
     - name: Update apt cache.

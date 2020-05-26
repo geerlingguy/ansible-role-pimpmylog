@@ -2,6 +2,7 @@
 dependencies: []
 
 galaxy_info:
+  role_name: pimpmylog
   author: geerlingguy
   description: Pimp my Log installation for Linux
   company: "Midwestern Mac, LLC"

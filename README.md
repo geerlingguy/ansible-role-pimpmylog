@@ -1,6 +1,6 @@
 # Ansible Role: Pimp My Log
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-pimpmylog.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-pimpmylog)
+[![Build Status](https://travis-ci.com/geerlingguy/ansible-role-pimpmylog.svg?branch=master)](https://travis-ci.com/geerlingguy/ansible-role-pimpmylog)
 
 Installs [Pimp my Log](http://pimpmylog.com/).
 

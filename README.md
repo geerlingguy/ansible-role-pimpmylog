@@ -1,6 +1,6 @@
 # Ansible Role: Pimp My Log
 
-[![Build Status](https://travis-ci.com/geerlingguy/ansible-role-pimpmylog.svg?branch=master)](https://travis-ci.com/geerlingguy/ansible-role-pimpmylog)
+[![CI](https://github.com/geerlingguy/ansible-role-pimpmylog/workflows/CI/badge.svg?event=push)](https://github.com/geerlingguy/ansible-role-pimpmylog/actions?query=workflow%3ACI)
 
 Installs [Pimp my Log](http://pimpmylog.com/).
 

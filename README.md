@@ -1,5 +1,7 @@
 # Ansible Role: Pimp My Log
 
+> **DEPRECATED**: This role has been deprecated. Please consider using other tools like GoAccess or forking this role and maintaining your own version if you still want to use Pimp my Log.
+
 [![CI](https://github.com/geerlingguy/ansible-role-pimpmylog/workflows/CI/badge.svg?event=push)](https://github.com/geerlingguy/ansible-role-pimpmylog/actions?query=workflow%3ACI)
 
 Installs [Pimp my Log](http://pimpmylog.com/).
